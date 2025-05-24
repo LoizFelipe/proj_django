@@ -1,4 +1,4 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse , render
 
 # Create your views here.
 def index(request):
@@ -14,8 +14,13 @@ def portuga(request):
     return HttpResponse(t_html)
 
 def testrender(request):
-    t_html = '<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ABC SPORT</title><link rel="icon" href="https://img.freepik.com/vetores-premium/castelo-simples-no-estilo-pixel-art_475147-1136.jpg?w=2000" type="image/x-icon"></head><body><p> Esta é minha pagina de teste render </p></body></html>'
-    return HttpResponse(t_html)
+    
+    return render(request,'escola.html')
+
+def msg_do_aluno_render(request):
+    
+    return render(request,'escola.html')
+
 
 
 #def aluno(request):
