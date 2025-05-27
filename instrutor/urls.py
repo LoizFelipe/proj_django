@@ -2,8 +2,10 @@ from django.urls import path
 
 from . import views
 
+app_name = 'instrutor'
+
 urlpatterns = [
-    path('msgdomarcao/', views.msgdomarcao, name="msgdomarcao"),    
-    path('msgdomarcao_render/', views.msgdomarcao_render, name="msgdomarcao_render"),
+    path('instru', views.instar, name='instar'),    
+    
     
 ]

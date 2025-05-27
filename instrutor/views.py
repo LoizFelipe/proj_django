@@ -1,14 +1,12 @@
-from django.shortcuts import HttpResponse , render
+from django.shortcuts import render
 
 # Create your views here.
 
-def msgdomarcao(request):
-    t_html = '<html><body>Dentro do instrutor(MARCÃoO) (tipos de atividade)</body></html>'
-    return HttpResponse(t_html)
-
-def msgdomarcao_render(request):
+def instar(request):
     
-    return render(request,'escola.html')
+    return render (request, 'instrutor/instarIntrutor.html')
+
+
 
 
 
