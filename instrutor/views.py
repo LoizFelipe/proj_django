@@ -2,10 +2,12 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def instar(request):
-    
-    return render (request, 'instrutor/instarIntrutor.html')
 
+def cadastrar(request):
+    return render (request, 'instrutor/cadastroInstrutor.html')
+
+def listar(request):
+    return render (request, 'instrutor/listaInstrutor.html')
 
 
 
