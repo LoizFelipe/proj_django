@@ -24,12 +24,10 @@ urlpatterns = [
 
     path('',TemplateView.as_view(template_name='escola.html') ),
 
-    path('tiposdeatividade/', include("tiposdeatividade.urls") ),
+    path('tiposdeatividade/', include("tiposdeatividade.urls", namespace='tiposdeatividade') ),
     path('aluno/', include("aluno.urls", namespace='aluno') ),
     path('instrutor/', include("instrutor.urls", namespace='instrutor') ),
     path('titulo/', include("titulo.urls", namespace='titulo' ) ),
     path('turma/', include("turma.urls", namespace='turma') ),
-    path('utilitarios/', include("utilitarios.urls") ),
-
-        
+    path('utilitarios/', include("utilitarios.urls", namespace='utilitarios') ),     
 ]

@@ -1,7 +1,6 @@
-from django.shortcuts import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
-def msgutilitarios(request):
-    t_html = '<html><body>Dentro do utilidades</body></html>'
-    return HttpResponse(t_html)
+def cadastrar(request):
+    return render (request, 'utilitarios/contato.html')

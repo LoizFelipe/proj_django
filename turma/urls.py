@@ -1,14 +1,13 @@
 from django.urls import path
 from . import views
 
-app_name = 'turmass'
+app_name = 'turma'
 
 urlpatterns = [
     #path('lista', views.listar, name='listar'),
-    path('turma', views.turma, name="turma"),
-    path('turmas', views.turmas, name="turmas"),
-    path('lista', views.lista, name="lista"),
+    path('cadastro', views.cadastrar, name="cadastrar"),
+    path('lista', views.listar, name="listar"),
+    path('registro', views.registrar, name="registrar"),
 
-    
-    
+        
 ]
